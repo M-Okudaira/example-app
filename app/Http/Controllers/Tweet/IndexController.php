@@ -16,7 +16,7 @@ class IndexController extends Controller
      */
     public function __invoke(Request $request, TweetService $tweetService)
     {
-	    $tweetService = new TweetService();
+	   // $tweetService = new TweetService();
 	    $tweets = $tweetService->getTweets();
 	    //dump($tweets);
         //app(\App\Exceptions\Handler::class)->render(request(), throw new \Error('dump report.'));
