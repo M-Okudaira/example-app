@@ -3,7 +3,10 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-	"heroku-postbuild": "vite build"
+	"heroku-postbuild": "vite build",
+	"compile": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.3",
