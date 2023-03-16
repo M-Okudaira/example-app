@@ -11,4 +11,7 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    build:{//この部分を追加
+    outDir:"./build"
+    },
 });
