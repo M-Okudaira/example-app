@@ -2,12 +2,7 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build",
-	"heroku-postbuild": "vite build",
-	"postinstall": "npm run build",
-	"compile": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ]
+        "build": "vite build"
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.3",
