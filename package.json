@@ -3,7 +3,7 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-	"heroku-postbuild": "composer require laravel/breeze && npm run build"
+	"build": "composer require laravel/breeze"
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.3",
