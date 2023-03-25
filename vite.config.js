@@ -12,6 +12,9 @@ export default defineConfig({
         }),
     ],
     build:{//この部分を追加
-    outDir:"./build"
+        outDir:"./build"
     },
+    server:{
+       host:'0.0.0.0'
+  }
 });
