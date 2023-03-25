@@ -1,8 +1,9 @@
 {
     "private": true,
     "scripts": {
-	"dev": "concurrently 'vite' 'nodemon --es-module-specifier-resolution=node server.mjs'",
-        "heroku-postbuild": "vite build"
+	"dev": "vite",
+        "build": "vite build",
+        "postinstall": "npm run build"
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.3",
