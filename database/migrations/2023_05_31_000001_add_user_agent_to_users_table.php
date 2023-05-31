@@ -12,8 +12,6 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('users', function (Blueprint $table) {
-           $table->string('user_agent')->default(NULL)->after('password');
-           $table->string('remote_addr')->default(NULL)->after('user_agent');
            
         });
     }
