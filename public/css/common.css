@@ -1,0 +1,132 @@
+@charset "utf-8";
+.bg_color {
+	background-color:#9ea1a3;
+}
+.bg_header {
+	margin-bottom:8px;
+	padding-bottom:16px;
+ 	/* 角丸 */
+        border-radius: 18px;                    /* CSS3 */
+    	-webkit-border-radius: 18px;        /* Safari,Google Chrome用 */
+    	-moz-border-radius: 18px;                   /* Firefox用 */
+       	border:1px solid #698aab;
+	background-color:#c1e4e9;
+	box-shadow: 10px 5px 5px rgba(28,48,92, 0.5);
+	);;
+}
+
+.title_color {
+	color:#0f2350;
+}
+.list_area {
+	position:relative;
+	padding-bottom:16px;
+        /* 角丸 */
+        border-radius: 18px;                    /* CSS3 */
+        -webkit-border-radius: 18px;        /* Safari,Google Chrome用 */
+        -moz-border-radius: 18px;                   /* Firefox用 */
+        border:1px solid #698aab;
+	background-color:white;
+	box-shadow: 10px 5px 5px rgba(89,88,87, 0.5);
+	
+}
+.btn_login_kadomaru {
+	position:relative;
+	width:120px;
+	margin-right: auto;
+       	margin-left: auto;
+	padding-left:12px;
+	padding-top:6px;
+	padding-right:12px;
+	padding-bottom:6px;
+	margin-bottom:10px;
+	font-family:"ＭＳ ゴシック", "MS Gothic", "Osaka－等幅", Osaka-mono, monospace;
+	color: #004782;
+	font-size:16px;
+	font-weight:bold;
+	/* 角丸 */
+	border-radius: 18px;        		/* CSS3 */  
+    -webkit-border-radius: 18px;    	/* Safari,Google Chrome用 */  
+    -moz-border-radius: 18px;   		/* Firefox用 */  
+	border:1px solid #004782;
+	/* グラデーション */
+	background: -moz-linear-gradient(top, #ffffff, #9DCEFF);	/* Firefox用 */  
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#9DCEFF));	/* Safari,Google Chrome用 */  
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#9DCEFF', GradientType=0)"; /* IE9以下用　*/
+	background: linear-gradient(to bottom, #ffffff, #9DCEFF);	/* IE10用 */
+	text-align:center;
+	cursor:pointer;
+	z-index:10000;
+}
+.clear_both {
+	clear:both;
+}
+.btn_login_kadomaru:hover {
+	/* 角丸 */
+	border-radius: 18px;        		/* CSS3 */  
+    -webkit-border-radius: 18px;    	/* Safari,Google Chrome用 */  
+    -moz-border-radius: 18px;   		/* Firefox用 */  
+	border:1px solid #004782;
+	/* グラデーション */
+	background: -moz-linear-gradient(top, #ffffff, #ffffff);	/* Firefox用 */  
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));	/* Safari,Google Chrome用 */  
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0)"; /* IE9以下用　*/
+	background: linear-gradient(to bottom, #ffffff, #ffffff);	/* IE10用 */
+}
+.btn_login_kadomaru a:link {
+	text-decoration: none; /* 非常に特殊な表示方法でリンクをスタイル付けする場合を除き、一目で見分けられるように下線を指定することをお勧めします。 */
+	color: #004782;
+}
+.btn_login_kadomaru a:visited {
+	text-decoration: none; /* 非常に特殊な表示方法でリンクをスタイル付けする場合を除き、一目で見分けられるように下線を指定することをお勧めします。 */
+	color: #004782;
+}
+
+.btn_register_kadomaru {
+	position:relative;
+	width:120px;
+	margin-right: auto;
+        margin-left: auto;
+        padding-left:12px;
+        padding-top:6px;
+        padding-right:12px;
+        padding-bottom:6px;
+        font-family:"ＭＳ ゴシック", "MS Gothic", "Osaka－等幅", Osaka-mono, monospace;
+        color: #1f3134;
+        font-size:16px;
+        font-weight:bold;
+        /* 角丸 */
+        border-radius: 18px;                    /* CSS3 */
+    -webkit-border-radius: 18px;        /* Safari,Google Chrome用 */
+    -moz-border-radius: 18px;                   /* Firefox用 */
+        border:1px solid #1f3134;
+        /* グラデーション */
+        background: -moz-linear-gradient(top, #ffffff, #7ebeab);        /* Firefox用 */
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#7ebeab));        /* Safari,Google Chrome用 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#7ebeab', GradientType=0)"; /* IE9以下用　*/
+        background: linear-gradient(to bottom, #ffffff, #7ebeab);       /* IE10用 */
+	text-align:center;
+        cursor:pointer;
+        z-index:10000;
+}
+.btn_register_kadomaru:hover {
+        /* 角丸 */
+        border-radius: 18px;                    /* CSS3 */
+    -webkit-border-radius: 18px;        /* Safari,Google Chrome用 */
+    -moz-border-radius: 18px;                   /* Firefox用 */
+        border:1px solid #004782;
+        /* グラデーション */
+        background: -moz-linear-gradient(top, #ffffff, #ffffff);        /* Firefox用 */
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));        /* Safari,Google Chrome用 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0)"; /* IE9以下用　*/
+        background: linear-gradient(to bottom, #ffffff, #ffffff);       /* IE10用 */
+}
+.btn_iregister_kadomaru a:link {
+        text-decoration: none; /* 非常に特殊な表示方法でリンクをスタイル付けする場合を除き、一目で見分けられるように下線を指定することをお勧めします。 */
+        color: #004782;
+}
+.btn_iregister_kadomaru a:visited {
+        text-decoration: none; /* 非常に特殊な表示方法でリンクをスタイル付けする場合を除き、一目で見分けられるように下線を指定することをお勧めします。 */
+        color: #004782;
+}
+
