@@ -1,0 +1,128 @@
+@charset "utf-8";
+.token_pg {
+        background-color:#a4c1d7;
+}
+.token_title_color {
+        color:#26499d;
+	font-size:28px;
+	font-weight:bold;
+}
+.token_area {
+        position:relative;
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+        padding-bottom:16px;
+        /* 角丸 */
+        border-radius: 18px;                    /* CSS3 */
+        -webkit-border-radius: 18px;        /* Safari,Google Chrome用 */
+        -moz-border-radius: 18px;                   /* Firefox用 */
+        border:1px solid #698aab;
+        background-color:white;
+        box-shadow: 10px 5px 5px rgba(89,88,87, 0.5);
+	text-align:center;
+}
+.token_guide {
+        font-size:18px;
+        font-weight:bold;
+        color:#043c78;
+}
+/* 画面幅が600px以下の場合 */
+@media (max-width: 600px) {
+  /* .token_areaクラスのスタイルを上書き */
+  .token_area {
+    /* 幅を100%にする */
+    width: 100%;
+    /* 左右の余白をなくす */
+    margin-left: 0;
+    margin-right: 0;
+    /* 角丸や影などは好みに応じて変更 */
+  }
+  .token_guide {
+        font-size:12px;
+        font-weight:bold;
+        color:#043c78;
+  }
+}
+.token_input {
+	width:240px;
+	/*height:26px;*/
+	padding:5px;
+	margin-top:8px;
+	margin-bottom:7px;
+	font-size:16px;
+	font-family:Arial, sans-serif;
+	color:#036;
+	border:solid 1px #06C;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: inset 0 0 8px rgba(0,102,204,0.4);
+	-webkit-box-shadow: inset 0 0 8px rgba(0,102,204,0.4);
+	box-shadow: inset 0 0 8px rgba(0,102,204,0.4);
+	/*margin:0 0 20px;*/
+}
+.token_input:focus {
+	border:solid 1px #06C;
+	-moz-box-shadow: inset 0 0 8px rgba(253,174,28,0.3);
+	-webkit-box-shadow: inset 0 0 8px rgba(253,174,28,0.3);
+	box-shadow: inset 0 0 8px rgba(253,174,28,0.3);
+}
+.token_input_btn {
+        position:relative;
+        width:120px;
+        margin-right: auto;
+        margin-left: auto;
+	margin-top: 8px;
+        padding-left:12px;
+        padding-top:6px;
+        padding-right:12px;
+        padding-bottom:6px;
+        margin-bottom:10px;
+        font-family:"ＭＳ ゴシック", "MS Gothic", "Osaka－等幅", Osaka-mono, monospace;
+        color: #004782;
+        font-size:16px;
+        font-weight:bold;
+        /* 角丸 */
+        border-radius: 18px;                    /* CSS3 */
+    -webkit-border-radius: 18px;        /* Safari,Google Chrome用 */
+    -moz-border-radius: 18px;                   /* Firefox用 */
+        border:1px solid #004782;
+        /* グラデーション */
+        background: -moz-linear-gradient(top, #ffffff, #9DCEFF);        /* Firefox用 */
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#9DCEFF));        /* Safari,Google Chrome用 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#9DCEFF', GradientType=0)"; /* IE9以下用　*/
+        background: linear-gradient(to bottom, #ffffff, #9DCEFF);       /* IE10用 */
+        text-align:center;
+        cursor:pointer;
+        z-index:10000;
+}
+.clear_both {
+        clear:both;
+}
+.token_input_btn:hover {
+        /* 角丸 */
+        border-radius: 18px;                    /* CSS3 */
+    -webkit-border-radius: 18px;        /* Safari,Google Chrome用 */
+    -moz-border-radius: 18px;                   /* Firefox用 */
+        border:1px solid #004782;
+        /* グラデーション */
+        background: -moz-linear-gradient(top, #ffffff, #ffffff);        /* Firefox用 */
+        background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));        /* Safari,Google Chrome用 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0)"; /* IE9以下用　*/
+        background: linear-gradient(to bottom, #ffffff, #ffffff);       /* IE10用 */
+}
+.token_err {
+	width:95%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:20px;
+	padding-top:4px;
+	padding-bottom:2px;
+	background-color:#FD3E6D;
+	color:white;
+	font-size:16px;
+	font-weight:normal;
+	/*text-indent:20px;*/
+}
+

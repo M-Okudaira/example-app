@@ -20,8 +20,9 @@ Route::get('/', function () {
 // Sample
 Route::get('/sample', [\App\Http\Controllers\Sample\IndexController::class, 'show']);
 Route::get('/sample/{id}', [\App\Http\Controllers\Sample\IndexController::class, 'showId']);
-
-
+// Token
+Route::get('/token',\App\Http\Controllers\Token\IndexController::class)->name('token.index');
+Route::post('/token/create', \App\Http\Controllers\Token\CreateController::class) ->name('token.create');
 // Tweet
 Route::get('/tweet',\App\Http\Controllers\Tweet\IndexController::class)->name('tweet.index');
 Route::middleware('auth')->group(function () {

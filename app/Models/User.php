@@ -20,7 +20,9 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
-        'password',
+	'password',
+	'user_agent', 	// 追加
+	'remote_addr', 	// 追加
     ];
 
     /**

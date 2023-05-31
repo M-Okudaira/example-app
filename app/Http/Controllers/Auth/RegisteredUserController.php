@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use App\Mail\NewUserIntroduction;
 use Illuminate\Contracts\Mail\Mailer;
+use App\Mail\TokenSendMail;
 
 class RegisteredUserController extends Controller
 {
@@ -39,24 +40,17 @@ class RegisteredUserController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
-        ]);
-
-        $newUser = User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => Hash::make($request->password),
-        ]);
-
-        event(new Registered($newUser));
-
-        Auth::login($newUser);
-
-        // メールの送信処理を追加
-        $allUser = User::get();
-        foreach ($allUser as $user) {
-            $mailer->to($user->email)
-                ->send(new NewUserIntroduction($user, $newUser));
-        }
+	]);
+        // ワンタイムパスワード発行、メール送信、ワンタイムパスワード入力ページへリダイレクト(追加)
+	$name = $request->name;
+        $password = Hash::make($request->password);
+        $e_mail = $request->email;
+        $ua = $request->header('User-Agent');
+        $token_generate = str_pad(random_int(0,999999),6,0, STR_PAD_LEFT);
+        $mailer->to($e_mail)
+               ->send(new TokenSendMail($token_generate));
+		$user_kbn = 'new_user';
+        return redirect('token')->with(['name' => $name,'e_mail' => $e_mail,'password' => $password,'user_kbn' => $user_kbn,'token_generate' => $token_generate]);  // withでsession情報をセット
         return redirect(RouteServiceProvider::HOME);
     }
 }
